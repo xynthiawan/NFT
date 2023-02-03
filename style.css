@@ -1,0 +1,22 @@
+body{
+    margin:0;
+    font-family:Helvetica, sans-serif;
+    background: #020824;
+}
+
+*{box-sizing:border-box;}
+
+h1,h2,h3{
+    margin:0;
+    color:#fff;
+}
+
+h1, h2{
+    text-transform:uppercase;
+}
+
+h2{
+    font-size:2em;
+    position:relative;
+    display: inline-block;
+}
