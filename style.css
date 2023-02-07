@@ -1,3 +1,13 @@
+@media (max-width:720px){
+    .featured .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        gap:2em;
+        margin:10em 0 4em 0;
+    }
+}
 body{
     margin:0;
     font-family:Helvetica, sans-serif;
@@ -639,3 +649,4 @@ footer input{
     padding:0.7em;
     border-radius:5px;
 }
+
