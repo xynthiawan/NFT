@@ -41,7 +41,7 @@ h2:not(
     background: linear-gradient( 
         90deg,
         rgba(72,252,139,0)0%,
-        #48fc8b 50%,
+        #6e3dbc 50%,
         rgba(72,252,139,0)100%
     );
     position:absolute;
@@ -82,7 +82,7 @@ section, footer{
 }
 /*setting up header + containers*/
 header{
-    background:url(img/background.jpg)
+    background:url(img/background2.jpg)
     no-repeat center;
     background-size:cover;
     position:relative;
@@ -106,14 +106,14 @@ header .container{
 
 .btn{
     padding: 0.7em 2em;
-    border-radius: 0.3em;
+    border-radius: 2em;
     text-transform: uppercase;
     transition:0.3s;
 }
 
 .btn-primary{
     background: linear-gradient(
-        90deg, #48fc8b,#1de7ea
+        90deg, #b359fd,#1de7ea
     );
     color: #111;
     border:none;
@@ -124,7 +124,7 @@ header .container{
 }
 
 .btn-secondary{
-    border: 1px #1de7ea solid;
+    border: 1px #6e3dbc solid;
     color:#fff;
 }
 .btn-secondary:hover{
@@ -146,6 +146,16 @@ nav{
 }
 nav a{
     text-transform: uppercase;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+
+nav img{
+    padding-right: 5%;
+
 }
 .brand{
     font-size: 1.6em;
@@ -215,10 +225,10 @@ h1{
     background: linear-gradient(
         0deg,
         rgba(72,252,139,0) 0%,
-        #48fc8b 50%,
+        #6e3dbc 50%,
         rgba(72,252,139,0)100%
         );
-    filter:drop-shadow(0 0 0.5em #48fc8b);
+    filter:drop-shadow(0 0 0.5em #6e3dbc);
     margin: 0 2em;
 }
 
@@ -284,15 +294,19 @@ h1{
 
 /*adding light color for all cards*/
 .services .card:nth-child(1) .light{
-    background:#bcb83d;
+    background:#6e3dbc;
 }
 
 .services .card:nth-child(2) .light{
     background:#6e3dbc;
 }
 .services .card:nth-child(3) .light{
-    background:#ef3636;
+    background:#6e3dbc;
 }
+.services .card:nth-child(4) .light{
+    background:#6e3dbc;
+}
+
 
 /*featured section*/
 .featured .heading{
@@ -613,7 +627,7 @@ changing the color for other cards*/
 /*trial*/
 .trial{
     background:
-    url(img/background.jpg)
+    url(img/background2.jpg)
     center no-repeat;
     background-size:cover;
     padding:6em 1em;
@@ -648,5 +662,7 @@ footer input{
     border:none;
     padding:0.7em;
     border-radius:5px;
+    color:white;
 }
+
 
