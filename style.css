@@ -638,9 +638,9 @@ changing the color for other cards*/
 
 /*trial*/
 .trial{
-    background:
+    /*background:
     url(img/background2.jpg)
-    center no-repeat;
+    center no-repeat;*/
     background-size:cover;
     padding:6em 1em;
 }
@@ -649,6 +649,46 @@ changing the color for other cards*/
     margin: 2em auto 3em auto;
     max-width:700px;
 }
+/*carousel section*/
+.uconn-carousel {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .uconn-carousel .carousel {
+    display: flex;
+    position: relative;
+    left: -28%;
+  }
+  
+  .uconn-carousel .carousel img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    opacity: 0.3;
+  }
+  
+  .carousel img:nth-child(3) {
+    opacity: 1;
+  }
+  
+  .uconn-carousel .carousel-btns {
+    display: flex;
+    justify-content: center;
+    width:150px;
+    margin-top:10%;
+    margin-left: 45%;
+    margin-right: 45%;
+    border-radius: 5em;
+    background-color: white;
+  }
+  
+  .uconn-carousel .carousel-btns .left,
+  .uconn-carousel .carousel-btns .right {
+    margin: 0 5px;
+    padding: 5px;
+  }
 
 /*footer section*/
 footer{
