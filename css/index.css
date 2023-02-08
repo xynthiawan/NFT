@@ -36,7 +36,7 @@ h2{
 */
 
 h2:not(
-    .explore h2, footer h2
+     footer h2
 )::before,
 .explore h3::before{
     content:"";
@@ -672,10 +672,8 @@ changing the color for other cards*/
 footer{
     display: flex;
     justify-content:space-between;
-    align-items:center;
     flex-wrap:wrap;
     gap:2em;
-    background-color: #020824;
 }
 footer li{
     margin: 1em 0;
