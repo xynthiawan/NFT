@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/account.css">
+</head>
+
+<body>
+    <header class="header-wrap">
+        <div class="nav-header">
+            <div class="logo">
+                <a href="homepage.html">
+                </a>
+            </div>
+            <div class="nav-list">
+                <div class="nav-item">
+                    <a href="homepage.html">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="information.html">Information</a>
+                </div>
+                <div class="nav-item">
+                    <a href="service.html">Service</a>
+                </div>
+                <div class="nav-item active">
+                    <a href="account.html">Account</a>
+                </div>
+            </div>
+            <div class="right-nav">
+                <div class="nav-item">
+                    Frofro
+                </div>
+                <div class="nav-item">
+                    <a href="/login.html" class="btn">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="w acc-wrap">
+        <div class="accIcon">
+            <img src="./images/account/1.png" alt="" height="80">
+        </div>
+        <div class="accInfo">
+            <div>Frofro</div>
+            <div>fro.xiaokeai@gmail.com</div>
+        </div>
+    </div>
+
+
+    <div class="w content-wrap">
+        <div class="content-tabs">
+            <div class="active">
+                <img src="./images/account/2.svg" alt="" height="40">
+            </div>
+            <div>
+                <img src="./images/account/3.svg" alt="" height="40">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll(".content-tabs>div").forEach((e, index) => e.onclick = function () {
+            document.querySelectorAll(".content-tabs>div").forEach(e => {
+                e.className = ''
+            });
+            e.className = 'active'
+
+            if (index === 0) {
+                document.querySelector(".range-c").style.display = 'none'
+                document.querySelector(".project-progress-list").style.display = 'none'
+            } else {
+                document.querySelector(".range-c").style.display = 'flex'
+                document.querySelector(".project-progress-list").style.display = 'block'
+            }
+        })
+    </script>
+
+    <div class="w zoo-list">
+        <div class="zoo-list-item">
+            <div class="zoo-item">
+                <div class="image">
+                    <img src="./images/account/4.png" alt="" width="420">
+                </div>
+                <div class="zoo-info">
+                    <div class="zoo-info-title">Kyiv Zoological Park</div>
+                    <div class="zoo-info-desc">OThe Kyiv Zoo is one of the largest zoos in the former
+                        Soviet Union and the only large zoo in Kyiv, Ukraine. </div>
+                    <div class="zoo-info-icons">
+                        <ul>
+                            <li>
+                                <img src="./images/information/7.png" alt="">
+                            </li>
+                            <li>
+                                <img src="./images/information/8.png" alt="">
+                            </li>
+                            <li>
+                                <img src="./images/information/9.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="range-c" style="display: none">
+                        <div class="range">
+                            <div class="range-active"></div>
+                            <div class="text">
+                                70%
+                            </div>
+                        </div>
+
+                        100000$
+                    </div>
+                </div>
+                <div class="zoo-btns">
+                    <div class="zoo-btns-icons">
+                        <img src="./images/account/5.svg" alt="icons" width="60">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="project-progress-list w" style="display: none">
+        <h2>Project progress</h2>
+
+        <table>
+            <tr>
+                <th>Task</th>
+                <th>Time</th>
+                <th>Progress</th>
+                <th>Description</th>
+            </tr>
+            <tr style="line-height: 100px;">
+                <td>Food for Animals</td>
+                <td>2022/10/1</td>
+                <td>100%</td>
+                <td style="display: flex">
+                    <img src="./images/account/4.png" height="100">
+                    <img src="./images/account/4.png" height="100">
+                </td>
+            </tr>
+            <tr style="line-height: 100px;">
+                <td>发起捐款项目</td>
+                <td>2022/10/1</td>
+                <td>100%</td>
+                <td style="display: flex">
+                    <img src="./images/account/4.png" height="100">
+                    <img src="./images/account/4.png" height="100">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <footer class="footer-wrap w">
+        <div class="w">
+            <div>
+                <h1>CONTACT US</h1>
+                <h3>(404)218-3094</h3>
+                <h3>9 dog ln, Unit2316,
+                    Storrs Mansfield, CT</h3>
+            </div>
+            <div>
+                <h1>FOLLOW US</h1>
+                <img src="./images/home/home-img8.svg" alt="">
+                <img src="./images/home/home-img9.svg" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/zoo-list.js"></script>
+</body>
+
+</html>

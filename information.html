@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/information.css">
+</head>
+
+<body>
+
+    <header class="header-wrap">
+        <div class="nav-header">
+            <div class="logo">
+                <a href="homepage.html">
+                </a>
+            </div>
+            <div class="nav-list">
+                <div class="nav-item ">
+                    <a href="homepage.html">Home</a>
+                </div>
+                <div class="nav-item active">
+                    <a href="information.html">Information</a>
+                </div>
+                <div class="nav-item">
+                    <a href="service.html">Service</a>
+                </div>
+                <div class="nav-item">
+                    <a href="account.html">Account</a>
+                </div>
+            </div>
+            <div class="right-nav">
+                <div class="nav-item">
+                    Frofro
+                </div>
+                <div class="nav-item">
+                    <a href="/login.html" class="btn">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="information-list w">
+        <div class="information-item">
+            <div class="image">
+                <img src="./images/information/1.png" alt="img" width="500">
+            </div>
+            <div class="text">
+                <h2>Nikolaev Zoo</h2>
+                <p>One of the best and most famous zoo in Europe, </p>
+                <p>founded in 1901 by city Mayor Mykola Leontovych.</p>
+                <div class="icons">
+                    <img src="./images/information/7.png" alt="ic">
+                    <img src="./images/information/8.png" alt="ic">
+                    <img src="./images/information/9.png" alt="ic">
+                </div>
+            </div>
+            <div class="btns">
+                <div>
+                    <img src="./images/information/10.svg" alt="">
+                </div>
+                <div>
+                    <button class="btn">Donate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const data = [
+            {
+                title: 'Nikolaev Zoo',
+                p: [
+                    'One of the best and most famous zoo in Europe, '
+                    , 'founded in 1901 by city Mayor Mykola Leontovych.'
+                ]
+            },
+            {
+                title: 'Kyiv Zoological Park',
+                p: [
+                    'The Kyiv Zoo is one of the largest zoos in the former ',
+                    'Soviet Union and the only large zoo in Kyiv, Ukraine. '
+                ]
+            },
+            {
+                title: 'Kharkiv Zoo',
+                p: [
+                    'Kharkov Zoo is the oldest zoo in Ukraine, it was founded ',
+                    'in 1896. It is located in the heart of the city next to the ',
+                    'Park Shevchenko.'
+                ]
+            },
+            {
+                title: 'Askania-Nova',
+                p: [
+                    'Askania-Nova is a Ukrainian nature reserve located in ',
+                    'Kherson Oblast, Ukraine, within the dry Taurida steppe ',
+                    'near Oleshky Sands and active member of the UNESCO ',
+                    'Man and the Biosphere Programme.'
+                ]
+            },
+            {
+                title: 'Black Sea Biosphere Reserve'
+                ,
+                p: [
+                    'The Black Sea Biosphere Reserve is a biosphere reserve',
+                    "of Ukraine that is located at littoral zone of the northern ",
+                    "Black Sea coast covering regions of the Kherson and Mykolaiv",
+                    "Oblasts and including Gulf of Tendra and Yahorlyk Bay. "
+                ]
+            },
+            {
+                title: 'Ecological Reserve',
+                p: [
+                    'This biosphere reserve is the youngest and biggest in Ukraine. ',
+                    'It is also the most famous throughout the world due to the ',
+                    'Chernobyl miniseries produced by HBO. Its territory was ',
+                    'named after the atomic plant in the town of Prypyat.'
+                ]
+            }
+        ]
+
+
+
+        document.querySelector(".information-list").innerHTML = data.map((item, index) => {
+            return `
+                <div class="information-item">
+                    <div class="image">
+                        <img src="./images/information/${index + 1}.png" alt="img" width="500">
+                    </div>
+                    <div class="text">
+                        <h2>${item.title}</h2>
+                        ${item.p.map(i => `<p>${i}</p>`).join('')}
+                        <div class="icons">
+                            <img src="./images/information/7.png" alt="ic">
+                            <img src="./images/information/8.png" alt="ic">
+                            <img src="./images/information/9.png" alt="ic">
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <div>
+                            <img src="./images/information/10.svg" alt="">
+                        </div>
+                        <div>
+                            <button class="btn">Donate</button>
+                        </div>
+                    </div>
+                </div>
+            `
+        }).join('');
+
+
+    </script>
+
+    <footer class="footer-wrap w">
+        <div class="w">
+            <div>
+                <h1>CONTACT US</h1>
+                <h3>(404)218-3094</h3>
+                <h3>9 dog ln, Unit2316,
+                    Storrs Mansfield, CT</h3>
+            </div>
+            <div>
+                <h1>FOLLOW US</h1>
+                <img src="./images/home/home-img8.svg" alt="">
+                <img src="./images/home/home-img9.svg" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
