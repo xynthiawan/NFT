@@ -34,7 +34,7 @@ h2{
 */
 
 h2:not(
-    .explore h2, .trial h2, footer h2
+    .explore h2, footer h2
 )::before,
 .explore h3::before{
     content:"";
@@ -102,6 +102,9 @@ header .container{
     min-height:100vh;
 
 }
+.logo-drawing{
+    border-radius:5px;
+}
 /*primary+ secondary button styles*/
 
 .btn{
@@ -133,7 +136,7 @@ header .container{
 }
 
 .btn-group .btn{
-    margin:1em;
+    margin-right: 1em;
 }
 
 /*styling nav*/
@@ -200,12 +203,14 @@ styling the middle part of the header
 
 .header-body div div{
     display: flex;
-    justify-content: center;
-    align-items:center;
     margin: 1em 0;
 }
+.header-body .text-container{
+    display:flex;
+    flex-direction: column;
+}
 h1{
-    font-size: 4.5em;
+    font-size: 2.5em;
 }
 
 .header-body p{
@@ -230,6 +235,13 @@ h1{
         );
     filter:drop-shadow(0 0 0.5em #6e3dbc);
     margin: 0 2em;
+}
+
+.side-img{
+    border-radius: 10px;
+    width:100%;
+  
+
 }
 
 .grid-img{
