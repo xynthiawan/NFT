@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>form</title>
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="css/contact.css">
+    <link rel ="stylesheet" href="css/index.css">
+    
+    
+ <body>
+    <header>
+        <div class ="container">
+            <nav>
+                <li class="logo">
+                    <img class='logo-drawing' src ="img/brandlogo.png" alt ="logo"  height="40" />
+                    <a href ="index.html" class ="brand"> Violet</a>
+                </li>
+               
+                <ul class ="menu">
+    
+                    <li><a href ="index.html" >Home</a></li>
+                    <li><a href ="Market.html"> Market</a></li>
+                    <li><a href ="Create.html" >Create</a></li>
+                    <li><a href ="news.html" >News</a></li>
+                    <li><a href ="contact.html"> Contact</a></li>
+    
+                    <li>
+                        <a href ="log-in.html" class ="btn btn-primary">
+                             Log In
+                    </a>
+                    </li>
+                </ul>
+                <a href ="#" class ="btn btn-primary">
+                    Log In
+                </a>
+                <button class ="menu-btn">
+                    <i class ='fas fa-bars'></i>
+                </button>
+            </nav>
+            
+  <div id ="overlay">
+    <form id="my-form"  action="https://formspree.io/f/mayvdlzw"
+    method="POST" onsubmit="event.preventDefault(); validateForm()"  >
+        
+      <h2>Contact Page</h2>
+
+      <label for ="name">Name:</label>
+      <input type ="text" id="name"  name ="name" placeholder="Your name">
+      <small class="error"></small>
+
+      <label for ="email">Email:</label>
+      <input type ="text" id="email" name ="_replyto" placeholder="Your email">
+      <small class="error"></small>
+
+      <label for ="subject">Subject:</label>
+      <input type ="text" id="subject" name ="subject" placeholder="Your subject">
+      <small class="error"></small>
+      
+      <label for ="message">Message:</label>
+      <textarea id="message" name ="message" placeholder=" Your message" rows ="6"></textarea>
+      <small class="error"> </small>
+
+      <div class ="center">
+          <input id="my-form-button" type ="submit" value ="Send Message">
+          <p id="success"></p>
+
+      </div>
+    </form>
+  </div>
+
+</div>
+
+        </div>
+        </header>
+
+
+
+  <div class="container">
+    <footer>
+        <div>
+            <h2>Digital Media & Design</h2>
+            <p>NFT's are transforming the way commece is transacted
+            </p>
+            <hr/>
+            <h3>
+              Get your latest updates  
+            </h3>
+            <form>
+                <div class="input-wrap">
+                    <input
+                    type="email"
+                    placeholder="Enter Your Email"/>
+                    <button type ="submit" class="btn btn-primary">
+                        Send
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div>
+            <h3>My Account</h3>
+            <ul>
+                <li><a href="#"> My Profile </a></li>
+                <li><a href="#"> Create Item </a></li>
+                <li><a href="#"> Collection </a></li>
+                <li><a href="#"> Edit Profile </a></li>     
+            </ul>
+        </div>
+
+        <div>
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="contact.html">Help</a></li>
+                <li><a href="#">Partner</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">NFT News</a></li>
+            </ul>
+        </div>
+
+        <div>
+         <h3>Developer</h3>
+         <ul>
+            <li><a href="https://dixinwan.wixsite.com/my-site">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact US</a></li>
+            <li><a href="#">Resume</a></li>
+         </ul>
+        </div>
+
+        <div>
+            <h3>Social Media</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">linkedin</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+<script src="js/contact.js">
+</script>
+<script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("success");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        } else {
+          response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+          })
+        }
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form"
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+  </body>
+</html>
