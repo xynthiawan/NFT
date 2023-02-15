@@ -8,15 +8,16 @@
     <title>NFTs</title>
     <script src="https://kit.fontawesome.com/3b1eb95a59.js" crossorigin="anonymous"></script>
     <link rel ="stylesheet" href="css/index.css">
-
+    <link rel ="stylesheet" href="css/contact.css">
 </head>
+
 <body>
 <header>
     <div class ="container">
         <nav>
             <li class="logo">
-                <img href="hook.html" class='logo-drawing' src ="img/brandlogo.png" alt ="logo"  height="40" />
-                <a href ="hook.html" class ="brand"> Violet</a>
+                <img href ="hook.html"class='logo-drawing' src ="img/brandlogo.png" alt ="logo"  height="40" />
+                <a href ="index.html" class ="brand"> Violet</a>
             </li>
            
             <ul class ="menu">
@@ -41,35 +42,64 @@
             </button>
         </nav>
 
-        <div class ='header-body'>
+        <section class="explore log-in">           
+ 
             <div>
-                <div class="text-container">
-                    
-                    <h1>Discover Art & Sell Extraordinary NFTs </h1>
+              <h2>
+                  ABOUT
+              </h2>
+              <p>
+                  NFT's transforming the way commerce is transacted, contracts are enforced,
+                  investments are held, and value is transferred. Every gemstone in the dark knows about creating value and value is transferred every tout reciprocity.
+              </p>
+              <div class ="stats">
+                  <div>
                     <p>
-                        Every gemstone in the dark knows about creating value and about reciprocity
-                    </p>
-                </div>
+                      NFT's transforming the way commerce is transacted, contracts are enforced,
+                      investments are held, and value is transferred. Every gemstone in the dark knows about creating value and value is transferred every tout reciprocity.
+                  </p>
+                  </div>
+                  <div>
+                    <p>
+                      NFT's transforming the way commerce is transacted, contracts are enforced,
+                      investments are held, and value is transferred. Every gemstone in the dark knows about creating value and value is transferred every tout reciprocity.
+                  </p>
+                  </div>
+              </div>
+          </div>
+          <span class ='bar'></span>
+          
+          <div id ="overlay">
+            <form id="my-form"  action="https://formspree.io/f/mayvdlzw"
+            method="POST" onsubmit="event.preventDefault(); validateForm()"  >
+                
+              <h2>Sign Up</h2>
+          
+             
+    
+              <label for ="email">Email:</label>
+              <input type ="text" id="email" name ="_replyto" placeholder="Your email">
+              <small class="error"></small>
+          
+              <label for ="password">Password:</label>
+              <input type ="text" id="password" name ="password" placeholder="Your password">
+              <small class="error"></small>
 
-                <div class ='btn-group'>
-                    <a href ="Market.html" class = "btn btn-primary">
-                        <i class="fas fa-rocket"></i>Explore
-                    </a> 
-                    <a href ="Market.html" class = "btn btn-secondary">
-                        <i class="fas fa-pen"></i> create
-                    </a>  
-                </div>
-            </div>
-            <span class ='bar'></span>
-            <div >
-                <img src ='img/headerpng.png' class="side-img"/>
-            </div>
-        </div> 
-        <img src ='img/grid1-top.png' class="grid-img"/>
-        </div>
+              <label for ="verify">Verify Passord:</label>
+              <input type ="text" id="verify"  name ="verify" placeholder="Verify password">
+              <small class="error"></small>
+          
+              <div class ="center">
+                  <input id="my-form-button" type ="submit" value ="Sign Up">
+                  <p id="success"></p>
+          
+              </div>
+            </form>
+          </div>
+          
+          </section>
         </header>
 <div class="container"> 
-    <img src="img/grid1-bottom.png" class="grid-img"/>
        
     
         <section class = "services">
@@ -263,7 +293,7 @@
             </div>
         </section>
  
-        <section  class ="explore">
+        <section class ="explore">
             <div class="grid">
                 <div></div>
                 <div></div>

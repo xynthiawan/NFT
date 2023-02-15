@@ -5,8 +5,9 @@
     <meta charset="utf-8"/>
     <title>form</title>
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="stylesheet" href="css/contact.css">
     <link rel ="stylesheet" href="css/index.css">
+    <link rel ="stylesheet" href="css/contact.css">
+    
     </head>
     
     <body>
@@ -39,7 +40,67 @@
                         <i class ='fas fa-bars'></i>
                     </button>
                 </nav>
+
+                <section class="explore log-in">           
+                    <div id ="overlay">
+                        <form id="my-form"  action="https://formspree.io/f/mayvdlzw"
+                        method="POST" onsubmit="event.preventDefault(); validateForm()"  >
+                            
+                          <h2>LOG IN</h2>
+                      
+                          <label for ="name">Name:</label>
+                          <input type ="text" id="name"  name ="name" placeholder="Your name">
+                          <small class="error"></small>
+                      
+                          <label for ="email">Email:</label>
+                          <input type ="text" id="email" name ="_replyto" placeholder="Your email">
+                          <small class="error"></small>
+                      
+                          <label for ="password">Password:</label>
+                          <input type ="text" id="password" name ="password" placeholder="Your password">
+                          <small class="error"></small>
+                      
+                          <div class ="center">
+                              <input id="my-form-button" type ="submit" value ="Log In">
+                              <p id="success"></p>
+                      
+                          </div>
+                        </form>
+                      </div>
+
+                      <span class ='bar'></span>
+                      
+                    <div>
+                      <h2>
+                          ABOUT
+                      </h2>
+                      <p>
+                          NFT's transforming the way commerce is transacted, contracts are enforced,
+                          investments are held, and value is transferred. Every gemstone in the dark knows about creating value and value is transferred every tout reciprocity.
+                      </p>
+                      <div class ="stats">
+                          <div>
+                            <p>
+                              NFT's transforming the way commerce is transacted, contracts are enforced,
+                              investments are held, and value is transferred. Every gemstone in the dark knows about creating value and value is transferred every tout reciprocity.
+                          </p>
+                          </div>
+                          <div>
+                            <p>
+                              NFT's transforming the way commerce is transacted, contracts are enforced,
+                              investments are held, and value is transferred. Every gemstone in the dark knows about creating value and value is transferred every tout reciprocity.
+                          </p>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  
+                
+                  
+                  </section>
                 </div>
+
+       
             </header>
         
                
@@ -106,7 +167,7 @@
                         </div>
                     </footer>
                 </div>
-                <script src="js/index.js"></script>
+                <script src="js/login.js"></script>
             </body>
             </html>
             

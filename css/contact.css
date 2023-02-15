@@ -15,7 +15,8 @@ body{
 
 form #myform{
     max-width:550px;
-    width:90%;
+    width:100%;
+
     padding: 1em;
     text-align: center;
     background: rgba(0,0,0,0.5);
@@ -43,7 +44,7 @@ label{
 
 input, textarea{
     font-family: sans-serif;
-    width:100%;
+    width:80%;
     padding: 10px;
     box-sizing:border-box;
     outline:none;
@@ -67,9 +68,11 @@ textarea::-webkit-scrollbar-thumb{
     background-color:rgb(79, 0, 225);
 }
 
+/*
 .center{
   text-align:center;
 }
+*/
 
 input[type="submit"]{
     margin-top:30px;
@@ -98,7 +101,7 @@ input[type="submit"]{
     color:#1de7ea;
 }
 
-input{
+input, textarea{
     background:#1b2039;
     border:none;
     padding:0.7em;
@@ -106,5 +109,9 @@ input{
     color:white;
 }
 
+#overlay{
+    margin-left:20%;
+    width:100%;
+}
 
 
