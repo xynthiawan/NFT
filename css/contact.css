@@ -1,13 +1,12 @@
 body{
     margin:0;
     font-family:Helvetica, sans-serif;
-    background: #4c65d4;
 }
 
 *{box-sizing:border-box;}
 
 body{
-    background-image:url(../img/background.jpg);
+   
     background-size: cover;
     margin:0;
 }
