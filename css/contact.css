@@ -28,7 +28,11 @@ form #myform{
    
 }
 
+form .form-wrap{
+    display:flex;
+    gap:2em;
 
+}
 
 h2{
     margin:0;
