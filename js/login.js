@@ -42,4 +42,3 @@ function clearMessages(){
     password.classList.remove("error-border");
 
     }
-

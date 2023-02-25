@@ -7,6 +7,7 @@
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <link rel ="stylesheet" href="css/index.css">
     <link rel ="stylesheet" href="css/contact.css">
+    <script src="https://kit.fontawesome.com/3b1eb95a59.js" crossorigin="anonymous"></script>
     
     </head>
     
@@ -49,12 +50,8 @@
                             
                           <h2>LOG IN</h2>
                       
-                          <label for ="name">Name:</label>
-                          <input type ="text" id="name"  name ="name" placeholder="Your name">
-                          <small class="error"></small>
-                      
-                          <label for ="email">Email:</label>
-                          <input type ="text" id="email" name ="_replyto" placeholder="Your email">
+                          <label for ="email">Name or Email:</label>
+                          <input type ="text" id="email" name ="email" placeholder="Your email">
                           <small class="error"></small>
                       
                           <label for ="password">Password:</label>
@@ -62,9 +59,13 @@
                           <small class="error"></small>
                       
                           <div class ="center">
-                              <input id="my-form-button" type ="submit" value ="Log In">
-                              <p id="success"></p>
+        
+                            <a href ="user.html" class ="btn btn-primary">
+                                Log In
+                            </a>
                       
+                              <p id="success"></p>
+                       <label>Not have an account? Click <a class= "sign-up-hover" href="hook.html">sign up now </a><i class="fa-solid fa-arrow-right"></i> </label>
                           </div>
                         </form>
                       </div>
@@ -121,7 +122,7 @@
                         <div>
                             <h3>My Account</h3>
                             <ul>
-                                <li><a href="profile.html"> My Profile </a></li>
+                                <li><a href="user.html"> My Profile </a></li>
                                 <li><a href="create.html"> Create Item </a></li>
                                 <li><a href="profile.html"> Collection </a></li>
                                 <li><a href="profile.html"> Edit Profile </a></li>     

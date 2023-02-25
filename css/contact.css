@@ -92,6 +92,18 @@ input[type="submit"]{
     border-radius:50px;
 }
 
+/*  style for sign up now */
+.log-in .sign-up-hover{
+    font-style: bold;
+    border-bottom: 2px solid white;
+    
+}
+
+.log-in .sign-up-hover :hover{
+    color:#b359fd;
+    cursor: pointer;
+    
+}
 .error{
     color:#b359fd;
 }
@@ -100,6 +112,7 @@ input[type="submit"]{
     border-bottom: 2px solid #b359fd;
 }
 
+/*style buttons*/
 #success{
     color:#1de7ea;
 }
@@ -112,9 +125,16 @@ input, textarea{
     color:white;
 }
 
+
 #overlay{
     margin-left:20%;
     width:100%;
+}
+
+/*button for sign up + log in*/
+
+.center{
+    margin-top:2em;
 }
 
 
