@@ -92,7 +92,7 @@ if(nameInput.value.length <1){
       errorFlag = true;
 }
 if(email.value.length <1){
-    errorNodes[1].innerText = "You really don't like to write huh?";
+    errorNodes[1].innerText = "About your art is missing";
     email.classList.add("error-border");
     errorFlag = true;
 }

@@ -34,6 +34,15 @@ form .form-wrap{
 
 }
 
+.price{
+    padding:0;
+    margin:0;
+}
+
+.width-adjust{
+    gap:1em;
+}
+
 h2{
     margin:0;
     text-align:center;
