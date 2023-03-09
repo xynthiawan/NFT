@@ -11,13 +11,21 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: "TiltNeon";
+    src: url(../fonts/TiltNeon-Regular-VariableFont_XROT\,YROT.ttf) format("truetype");
+  }
+
 .logo-drawing{
     padding-right:.5em;
 }
 
 body{
     margin:0;
-    font-family:Helvetica, sans-serif;
+    font-family:TiltNeon;
     background: #020824;
 }
 
@@ -461,6 +469,8 @@ h1{
     margin-top: 5.5em;
     padding: 0.7em;
  }
+
+
 
  #file-input .button{
     background-color: none;
@@ -988,7 +998,6 @@ footer input{
     justify-content: space-between;
     width: 100%;
     max-width: 500px;
-    border-radius: 10px;
     border-bottom: 2px solid #6e3dbc;
   }
   .user-summary p{
@@ -1106,3 +1115,16 @@ footer input{
 
 
   /*seller stuff*/
+
+  /*help page*/
+
+.article{
+  padding: 1em;
+  margin:1em;
+    text-align: center;
+    background: rgba(0,0,0,0.5);
+    background: rgba(127,127,127,0.25);
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.18);
+        
+}

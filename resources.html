@@ -41,6 +41,10 @@
                     <i class ='fas fa-bars'></i>
                 </button>
             </nav>
+
+            <div class ="heading">
+                <h2>HELP & Resources</h2>
+            </div>
             <section class ="explore">
            
                 <div class="grid">
@@ -54,49 +58,45 @@
                 </div>
                
                 <div>
-                  <h2>
-                      Resource: Moralis SDK
-                  </h2>
-                  <p>
-                    The Moralis SDK is like a magic wand that helps you do cool things with a computer. To use it, you need to have the wand with you, and you need to say a magic spell to activate it.
-
-                    To get the wand, you need to go to a special store on the computer called "Node Package Manager" and ask it to give you the Moralis SDK wand. Then you need to tell your computer where the wand is, so you can use it when you need it.
-                    
-                    Once you have the wand and your computer knows where to find it, you can use it to do amazing things, like finding treasures hidden deep in a digital world or talking to smart robots that can help you with your tasks.
-                  </p>
-                  <div class ="stats">
-                      <div>
-                        <p>
-                          NFT's transforming the way commerce is transacted, contracts are enforced,
-                          investments are held, and value is transferred. Every gemstone in the dark knows about creating value and value is transferred every tout reciprocity.
-                      </p>
+                    <div class="search-container">
+                        <form>
+                          <input type="text" placeholder="Search help and assistance..." id="search-input">
+                          <button class ="btn btn-primary"> submit</button>
+                        </form>
                       </div>
-                      <div>
-                        <p>
-                          NFT's transforming the way commerce is transacted, contracts are enforced,
-                          investments are held, and value is transferred. Every gemstone in the dark knows about creating value and value is transferred every tout reciprocity.
-                      </p>
+                      
+                      <div class="article-box">
+                        <div class="article">
+                          <h2 class="title">What is an NFT?</h2>
+                          <p class="content">An NFT, or non-fungible token, is a unique digital asset that is verified on a blockchain. NFTs can be used to represent ownership or proof of authenticity for digital art, collectibles, and other unique items.</p>
+                        </div>
+                        <div class="article">
+                          <h2 class="title">How to buy an NFT</h2>
+                          <p class="content">To buy an NFT, you will need a cryptocurrency wallet and some cryptocurrency such as Ethereum. You can browse NFT marketplaces to find and purchase NFTs using your wallet.</p>
+                        </div>
+                        <div class="article">
+                          <h2 class="title">NFT marketplaces</h2>
+                          <p class="content">Some popular NFT marketplaces include OpenSea, Nifty Gateway, and SuperRare. These marketplaces allow creators to sell their NFTs and collectors to browse and purchase them.</p>
+                        </div>
                       </div>
-                  </div>
+                      
+                      
               </div>
             </section>  
   <section class="explore">           
  
-  <div>
+  <div id="resources">
     <h2>
-        Contact method 2
+        Developer blog: Moralis SDK
     </h2>
     <p>
-        NFT's transforming the way commerce is transacted, contracts are enforced,
-        investments are held, and value is transferred. Every gemstone in the dark knows about creating value and value is transferred every tout reciprocity.
+      The Moralis SDK is like a magic wand that helps you do cool things with a computer. To use it, you need to have the wand with you, and you need to say a magic spell to activate it.
+
+      To get the wand, you need to go to a special store on the computer called "Node Package Manager" and ask it to give you the Moralis SDK wand. Then you need to tell your computer where the wand is, so you can use it when you need it.
+      
+      Once you have the wand and your computer knows where to find it, you can use it to do amazing things, like finding treasures hidden deep in a digital world or talking to smart robots that can help you with your tasks.
     </p>
     <div class ="stats">
-        <div>
-          <p>
-            NFT's transforming the way commerce is transacted, contracts are enforced,
-            investments are held, and value is transferred. Every gemstone in the dark knows about creating value and value is transferred every tout reciprocity.
-        </p>
-        </div>
         <div>
           <p>
             NFT's transforming the way commerce is transacted, contracts are enforced,
@@ -110,7 +110,7 @@
   <form id="my-form"  action="https://formspree.io/f/mayvdlzw"
   method="POST" onsubmit="event.preventDefault(); validateForm()"  >
       
-    <h2>Contact Page</h2>
+    <h2>Got a question?</h2>
 
     <label for ="name">Name:</label>
     <input type ="text" id="name"  name ="name" placeholder="Your name">
@@ -140,34 +140,6 @@
 
 </div>
  </div>
-
- <section class="explore" id="help">           
- 
-    <div>
-      <h2>
-          Contact method 2
-      </h2>
-      <p>
-          NFT's transforming the way commerce is transacted, contracts are enforced,
-          investments are held, and value is transferred. Every gemstone in the dark knows about creating value and value is transferred every tout reciprocity.
-      </p>
-      <div class ="stats">
-          <div>
-            <p>
-              NFT's transforming the way commerce is transacted, contracts are enforced,
-              investments are held, and value is transferred. Every gemstone in the dark knows about creating value and value is transferred every tout reciprocity.
-          </p>
-          </div>
-          <div>
-            <p>
-              NFT's transforming the way commerce is transacted, contracts are enforced,
-              investments are held, and value is transferred. Every gemstone in the dark knows about creating value and value is transferred every tout reciprocity.
-          </p>
-          </div>
-      </div>
-  </div>
-
-</section>
  </header>
 
 
@@ -182,13 +154,14 @@
             <h3>
               Get your latest updates  
             </h3>
+
             <form>
                 <div class="input-wrap">
                     <input
                     type="email"
                     placeholder="Enter Your Email"/>
-                    <button type ="submit" class="btn btn-primary">
-                        Send
+                    <button class="btn btn-primary">
+                        submit
                     </button>
                 </div>
             </form>
