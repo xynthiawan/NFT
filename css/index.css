@@ -398,8 +398,10 @@ h1{
 .featured .art-img{
     border: 1px solid rgba(255,255,255,0.18);
     border-radius: 10px;
-    width:100%;
+    width:13.5em;
+    height:13.5em;
     position: relative;
+    object-fit:cover;
     z-index:1;
 }
 
@@ -801,7 +803,6 @@ changing the color for other cards*/
   .uconn-carousel .carousel {
     display: flex;
     position: relative;
-    left: -28%;
   }
   
   .uconn-carousel .carousel img {
@@ -1128,3 +1129,88 @@ footer input{
     border: 1px solid rgba(255,255,255,0.18);
         
 }
+/*chart*/
+.chart {
+    width: 300px;
+    height: 150px;
+    position: relative;
+    margin: 0 auto;
+    background-color: #222;
+    padding:10px;
+    border-radius:10px;
+  }
+  
+  .line {
+    fill: none;
+    stroke:rgb(170, 0, 255);
+    stroke-width: 4;
+  }
+  
+  .x-axis text {
+    font-size: 20px;
+    fill: #fff;
+  }
+  
+  .y-axis text {
+    font-size: 20px;
+    fill: #fff;
+    text-anchor: end;
+  }
+  
+  .y-axis line {
+    stroke-width: 2;
+  }
+  
+  .y-axis text:first-of-type {
+    font-weight: bold;
+  }
+  
+  .y-axis text:last-of-type {
+    font-weight: bold;
+  }
+  
+  .x-axis line:first-of-type {
+    stroke-width: 2;
+  }
+  
+  /*news gallery*/
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .gallery p{
+   margin:0;
+   padding:0;
+  }
+  .item {
+    display: flex;
+    align-items: top;
+    margin:10px;
+  }
+  
+  .item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+  
+  .caption {
+    flex: 1;
+  }
+  
+  .caption h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .caption p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
