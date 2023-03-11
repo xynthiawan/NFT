@@ -1,15 +1,4 @@
-@media (max-width:720px){
-    .featured .cards{
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items:center;
-        gap:2em;
-        margin:10em 0 4em 0;
-    }
 
-
-}
 
 html{
     scroll-behavior: smooth;
@@ -819,12 +808,8 @@ changing the color for other cards*/
   .uconn-carousel .carousel-btns {
     display: flex;
     justify-content: center;
-    width:150px;
     margin-top:2em;
-    margin-left: 43%;
-    margin-right: 45%;
     border-radius: 5em;
-    background-color: white;
   }
   
   .uconn-carousel .carousel-btns .left,
@@ -1214,3 +1199,129 @@ footer input{
     line-height: 1.5;
   }
   
+  @media (max-width:720px){
+    .featured .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        gap:2em;
+        margin:10em 0 4em 0;
+    }
+    .header-body {
+        min-height: 60vh;
+        display:block;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 2em 0;
+        flex-direction: column;
+    }
+
+    .side-img {
+        border-radius: 10px;
+        width: 60%;
+        height:100%;
+        height:none;
+        width:none;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .explore{
+        display:flex;
+        flex-direction: column;
+    }
+    uconn-carousel .carousel-btns {
+       
+        width:none;
+        margin-top: 2em;
+        margin-left: 43%;
+        margin-right: 45%;
+        border-radius: 5em;
+        background-color: none;
+    }
+    .explore{
+        grid-gap:none;
+    }
+    .grid{
+        display:none;
+    }
+    .header-body .btn-group{
+        margin:0;
+        display: flex;
+        justify-content: center;
+    }
+    .header-body .btn-group{
+        font-size:small;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2em;
+        background: url(img/background2.jpg) no-repeat center;
+        text-align: center;
+    }
+    .grid-img{
+        display:none;
+    }
+    ul{
+    display: flex;
+    flex-direction: column;
+    }
+    h2:not( footer h2 )::before, .explore h3 .user-summary::before {
+        content: "";
+     
+    }
+    .uconn-carousel .carousel img {
+        width: 15em;
+        height: 10em;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap:none;
+        flex-direction: column;
+    }
+    footer input{
+        width: 14em;
+    margin-right: 20px;
+    }
+    .bar-news{
+        height:0;
+    }
+    .input-wrap{
+        display:flex;
+        justify-content: center;
+    }
+    .bar{
+        height:0;
+    }
+    .services .heading {
+       display:flex;
+       flex-direction:column;
+    }
+
+.featured .art-img {
+    width: 17.5em;
+    height: 17.5em;
+  }
+
+
+.help-form-search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1em;
+}
+
+#search-input{
+border-radius:30px;
+}
+  }

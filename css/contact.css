@@ -146,3 +146,8 @@ input, textarea{
 }
 
 
+@media(max-width:750px){
+    #overlay{
+        margin:0px;
+    }
+}
