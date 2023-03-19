@@ -1198,6 +1198,15 @@ footer input{
     font-size: 14px;
     line-height: 1.5;
   }
+
+  .credit-container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .credit-wrap{
+    width:30em;
+  }
   
   @media (max-width:720px){
     .featured .cards{
@@ -1324,4 +1333,7 @@ footer input{
 #search-input{
 border-radius:30px;
 }
+.credit-wrap{
+    width:20em;
+  }
   }
