@@ -387,8 +387,8 @@ h1{
 .featured .art-img{
     border: 1px solid rgba(255,255,255,0.18);
     border-radius: 10px;
-    width:13.5em;
-    height:13.5em;
+    width:15em;
+    height:15em;
     position: relative;
     object-fit:cover;
     z-index:1;
@@ -1207,6 +1207,188 @@ footer input{
   .credit-wrap{
     width:30em;
   }
+
+  /*individual art sections*/
+  .image-icon {
+    display: flex;
+    color:white;
+    padding: 1em;
+    gap:1em;
+    background: rgba(0,0,0,0.5);
+    background:rgb(99 14 183);
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.18);
+    align-items: center;
+  }
+  
+  .image-icon img {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .author-description {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .author-description h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .author-description p {
+    margin: 0;
+    font-size: 14px;
+  }
+  .count{
+    display:flex;
+    flex-direction:row;
+    gap:2em;
+    padding-top:1em;
+  }
+  .category-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap:1em;
+  }
+  
+  .category-tag {
+    display: inline-block;
+    border: white 2px solid;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 5px;
+    
+  }
+  .explore .market-img{
+    height:30em;
+  }
+
+  .explore h3{
+    position: relative;
+    display: flex;
+    gap: 1em;
+  }
+
+  .no-header{
+    background:none;
+  }
+/*comment container sections*/
+.comment-container {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .comment-section {
+    display:flex;
+  }
+  
+  .comment-box form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .comment-box textarea {
+    height: 60px;
+    padding: 10px;
+    margin-top:2em;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    background-color:rgb(32, 32, 32);
+    border-radius: 10px;
+    resize: none;
+    color:white;
+  }
+  
+  .emoji-picker {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .emoji-picker button {
+    margin: 5px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .comments {
+    margin-top: 20px;
+    padding:1em;
+  }
+  
+  .comment {
+    display: flex;
+    align-items:center;
+    margin-bottom: 10px;
+  }
+  
+  .comment .author {
+    font-weight: bold;
+    margin-right: 10px;
+    color:white;
+  }
+  
+  .comment .text {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #6f00de;
+    color:white;
+  }
+  
+  .comment .text:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .comment .text:before {
+    content: "";
+    display: table;
+  }
+  
+  .comment .text img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .comment .text .emoji {
+    font-size: 24px;
+  }
+  .btn-comment{
+    text-align: center;
+  }
+  
+  .gradient-overlay {
+    position: relative;
+  }
+  
+  .gradient-overlay {
+    position: relative;
+    height:100vh;
+  }
+  
+  .gradient-overlay:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom,transparent, #000);
+    opacity: 0.8; /* Adjust the opacity as needed */
+    z-index: 1; /* Make sure the gradient is above the content */
+  }
+  
+
   
   @media (max-width:720px){
     .featured .cards{
