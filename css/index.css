@@ -1266,6 +1266,7 @@ footer input{
   }
   .explore .market-img{
     height:30em;
+    object-fit: cover;
   }
 
   .explore h3{
@@ -1518,4 +1519,9 @@ border-radius:30px;
 .credit-wrap{
     width:20em;
   }
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+}
   }
